@@ -6,14 +6,7 @@ function HomeScreen ({navigation}) {
         <View>
             <Text>Bienvenido</Text>
             <View>
-                <Button
-                    title='Login'
-                    onPress={navigation.navigate('Login')}
-                />
-                <Button
-                    title='Registrarse'
-                    onPress={navigation.navigate('Registrarse')}
-                />
+                <Text>Esta es la home</Text>
             </View>
         </View>
     )
