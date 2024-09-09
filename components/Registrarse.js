@@ -1,4 +1,6 @@
- const RegistrarseScreen = () => {
+import { View, StyleSheet, Text, TextInput, Button } from 'react-native';
+
+const RegistrarseScreen = () => {
      let [firstName, setFirstName] = React.useState('');
      let [lastName, setLastName] = React.useState('');
      let [email, setEmail] = React.useState('');
@@ -87,4 +89,19 @@
          </View>
      );
  }
+ const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#ffffff',
+    },
+    logo: {
+      width: 100, // Ajusta el tamaño del logo según sea necesario
+      height: 100,
+    },
+  });
  export default RegistrarseScreen;
+
+ 
+  

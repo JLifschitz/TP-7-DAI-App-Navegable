@@ -1,5 +1,6 @@
  import React, {useState, useEffect} from 'react';
  import { Button, View, Text, TextInput } from 'react-native';
+ 
  const LoginScreen = (props) => {
      const [email, setEmail] = useState('');
      const [contraseña, setContraseña] = useState('');
@@ -80,4 +81,16 @@
          </View>
      );
  }
+ const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor: '#ffffff',
+    },
+    logo: {
+      width: 100, // Ajusta el tamaño del logo según sea necesario
+      height: 100,
+    },
+  });
  export default LoginScreen;
